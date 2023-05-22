@@ -1,0 +1,32 @@
+{
+  "name": "connecting-people-realtime-web-app",
+  "version": "1.0.0",
+  "description": "a realtime web app",
+  "main": "app.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marwaxhello/connecting-people-realtime-web-app.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "js"
+  ],
+  "author": "Maaike en Marwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Marwaxhello/connecting-people-realtime-web-app/issues"
+  },
+  "homepage": "https://github.com/Marwaxhello/connecting-people-realtime-web-app#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
