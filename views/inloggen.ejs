@@ -1,0 +1,47 @@
+<%- include('./partials/head.ejs') %>
+
+<div class="inlog">
+  <img src="/mep-3stappen.webp" alt="inlogscherm" class="inlog-background" />
+
+  <form action="" class="formulier">
+    <h2 class="inlog-titel">Inloggen</h2>
+
+    <div class="content">
+      <div class="inlog-box">
+        <i class="ri-user-line inlog-icoon"></i>
+
+        <div class="inlog-box__input">
+          <input type="text" placeholder="Gebruikersnaam" class="inlog-input" />
+        </div>
+      </div>
+
+      <div class="inlog-box">
+        <i class="ri-lock-2-line inlog-icon"></i>
+        <div class="inlog-box__input">
+          <input
+            type="password"
+            required=""
+            class="inlog-input"
+            id="inlog-pass"
+            placeholder="Wachtwoord"
+          />
+          <i class="ri-eye-off-line login-eye" id="login-eye"></i>
+        </div>
+      </div>
+
+      <div class="inlog-check">
+        <div class="inlog-check__group">
+          <input type="checkbox" class="inlog-check__input" />
+          <label for="" class="inlog-check__label">Onthoud mij</label>
+        </div>
+        <a href="" class="inlog-forgot">Wachtwoord vergeten?</a>
+      </div>
+
+      <a href="/ingelogd" class="inlog-button">Login</a>
+
+      <p class="login-register">Nog geen account? <a href="#">Registreer</a></p>
+    </div>
+  </form>
+</div>
+
+<%- include('./partials/foot.ejs') %>
