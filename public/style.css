@@ -1550,6 +1550,10 @@ section {
   width: 10em;
   align-items: center;
   border-radius: 10px;
+  margin-left: 0em;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
 }
 
 .dag-boven-in-chat-p {
@@ -1594,9 +1598,14 @@ section {
   overflow-x: hidden;
 }
 
+.grey-balk-input {
+  background-color: lightgrey;
+  padding: 1em;
+}
+
 .form {
   display: flex;
-  
+  width: 100%;
 }
 
 .input--rounded {
@@ -1607,6 +1616,7 @@ section {
   border: 1px solid lightgray;
   padding: 1em;
   height: calc(3rem + 2px);
+  width: 50em;
 }
 
 .button--rounded {
@@ -1620,12 +1630,19 @@ section {
   background: var(--Aqua-green);
   color: white;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 .button__icon {
   display: inline-block;
   height: 1em;
   width: 1em;
+}
+
+.smiley__icon {
+  display: inline-block;
+  z-index: 1;
+  padding: 0.5em;
 }
 
 /* .chat-1-links {
