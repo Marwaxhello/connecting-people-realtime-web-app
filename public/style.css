@@ -1570,7 +1570,65 @@ section {
   margin-top: 0em;
 }
 
-.chat-1-links {
+/* TEST */
+.chatroom__content {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1em;
+  min-height: 0;
+}
+
+.messages-wrapper {
+  flex: 1;
+  min-height: 0;
+}
+
+.messages {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.form {
+  display: flex;
+  
+}
+
+.input--rounded {
+  border-radius: 1.5em;
+}
+
+.input {
+  border: 1px solid lightgray;
+  padding: 1em;
+  height: calc(3rem + 2px);
+}
+
+.button--rounded {
+  border-radius: 1.5em;
+}
+.button {
+  font-size: 1rem;
+  display: inline-flex;
+  padding: 1em;
+  border: 1px solid transparent;
+  background: var(--Aqua-green);
+  color: white;
+  cursor: pointer;
+}
+
+.button__icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+
+/* .chat-1-links {
   border: 2px solid var(--Aqua-green);
   width: 16em;
   align-items: left;
@@ -1600,9 +1658,9 @@ section {
   margin-right: 1em;
   margin-bottom: 1em;
   font-size: 1em;
-}
+} */
 
-section form {
+/* section form {
   width: 100%;
   height: 2rem;
   display: grid;
@@ -1621,4 +1679,4 @@ section form > button {
   outline: none;
   transition: 0.2s;
   width: 100%;
-}
+} */
