@@ -1475,33 +1475,35 @@ h3 {
 /* ----------- CHAT PAGE ----------- */
 .chat {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  height: 100%;
+  grid-template-columns: 1fr 2fr;
+  height: auto;
+  width: 100%;
 }
 
 .chat-list {
   display: grid;
   grid-template-columns: repeat(1, 8fr);
   align-items: left;
-  height: 50em;
-  width: 20em;
-  padding-top: 2em;
+  height: 45em;
+  width: 27em;
+  border-right: 1px solid darkgrey;
 }
 
 .chat-avatar {
-  width: 8em;
-  height: 8em;
+  width: 5em;
+  height: 5em;
   border-radius: 50%;
   padding: 1em;
 }
 
 .chat-persons {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: left;
-  height: 0em;
-  width: 27em;
+  height: auto;
+  width: 26em;
+  padding-top: 0.5em;
+  border-bottom: 1px solid darkgray;
 }
 
 .chat-h3 {
@@ -1519,4 +1521,104 @@ h3 {
 .chat-dag {
   color: var(--Aqua-green);
   font-size: 0.5em;
+}
+
+.chat-box {
+  width: 75%;
+}
+
+.chat-top-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: left;
+  width: 32em;
+}
+
+.chat-avatar-chat-box {
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  padding: 0.5em;
+}
+
+section {
+  align-items: center;
+}
+
+.dag-boven-in-chat {
+  border: 2px solid darkgray;
+  width: 10em;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.dag-boven-in-chat-p {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 1em;
+  color: darkgray;
+  margin-bottom: 0.2em;
+  margin-top: 0.5em;
+}
+
+.tijd-boven-in-chat-p {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 0.5em;
+  color: darkgray;
+  margin-bottom: 0.7em;
+  margin-top: 0em;
+}
+
+.chat-1-links {
+  border: 2px solid var(--Aqua-green);
+  width: 16em;
+  align-items: left;
+  border-radius: 10px;
+  color: #000000;
+  margin-top: 5em;
+}
+
+.chatbericht-1-links {
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+.chat-1-rechts {
+  border: 2px solid var(--Darkblue);
+  width: 16em;
+  align-items: right;
+  border-radius: 10px;
+  color: #000000;
+  margin-top: 1em;
+}
+
+.chatbericht-1-rechts {
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+section form {
+  width: 100%;
+  height: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: left;
+}
+
+section form > button {
+  padding: 0 0.6rem 0 0.4rem;
+  width: 2rem;
+  background: #72a7a5;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border: 0;
+  opacity: 80%;
+  outline: none;
+  transition: 0.2s;
+  width: 100%;
 }
