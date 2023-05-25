@@ -1606,6 +1606,7 @@ section {
 .form {
   display: flex;
   width: 100%;
+  align-items: center;
 }
 
 .input--rounded {
@@ -1615,8 +1616,9 @@ section {
 .input {
   border: 1px solid lightgray;
   padding: 1em;
-  height: calc(3rem + 2px);
+  height: calc(3rem+ 2px);
   width: 50em;
+  margin-right: 0.5;
 }
 
 .button--rounded {
@@ -1626,7 +1628,7 @@ section {
   font-size: 1rem;
   display: inline-flex;
   padding: 1em;
-  border: 1px solid transparent;
+  border: none;
   background: var(--Aqua-green);
   color: white;
   cursor: pointer;
@@ -1639,10 +1641,14 @@ section {
   width: 1em;
 }
 
-.smiley__icon {
+.bi-bi-emoji-smile {
+  height: 2.6em;
+  width: 2.6em;
   display: inline-block;
   z-index: 1;
-  padding: 0.5em;
+  padding: 0.6em;
+  background: white;
+  border-radius: 50%;
 }
 
 /* .chat-1-links {
