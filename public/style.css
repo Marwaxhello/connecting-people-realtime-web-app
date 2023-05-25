@@ -1471,3 +1471,52 @@ h3 {
     align-items: center;
   }
 }
+
+/* ----------- CHAT PAGE ----------- */
+.chat {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  height: 100%;
+}
+
+.chat-list {
+  display: grid;
+  grid-template-columns: repeat(1, 8fr);
+  align-items: left;
+  height: 50em;
+  width: 20em;
+  padding-top: 2em;
+}
+
+.chat-avatar {
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  padding: 1em;
+}
+
+.chat-persons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: left;
+  height: 0em;
+  width: 27em;
+}
+
+.chat-h3 {
+  color: var(--Black);
+  font-size: 1em;
+  text-align: left;
+  padding: 0.3em;
+}
+
+.chat-p {
+  margin-bottom: 2em;
+  margin-left: 0;
+}
+
+.chat-dag {
+  color: var(--Aqua-green);
+  font-size: 0.5em;
+}
