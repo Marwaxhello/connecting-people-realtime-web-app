@@ -1651,7 +1651,7 @@ section {
   border-radius: 50%;
 }
 
-/* .chat-1-links {
+.chat-1-links {
   border: 2px solid var(--Aqua-green);
   width: 16em;
   align-items: left;
@@ -1681,7 +1681,7 @@ section {
   margin-right: 1em;
   margin-bottom: 1em;
   font-size: 1em;
-} */
+}
 
 /* section form {
   width: 100%;
