@@ -33,11 +33,11 @@ function addMessage(message) {
   messages.scrollTop = messages.scrollHeight;
 }
 
-// To make the placeholder disappear in the textfield
+// Placeholder weg als je typt
 const inputField = document.querySelector(".textfield");
 inputField.addEventListener("focus", function () {
   inputField.removeAttribute("placeholder");
 });
 inputField.addEventListener("blur", function () {
-  inputField.setAttribute("placeholder", "Typ een bericht...");
+  inputField.setAttribute("placeholder");
 });
