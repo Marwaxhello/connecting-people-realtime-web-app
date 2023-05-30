@@ -1520,7 +1520,19 @@ h3 {
 
 .chat-dag {
   color: var(--Aqua-green);
-  font-size: 0.5em;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.chat-melding {
+  background-color: var(--yellow);
+  color: var(--Darkblue);
+  font-size: 0.7em;
+  padding: 0.5em;
+  border-radius: 15px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-top: 20px;
 }
 
 .chat-box {
