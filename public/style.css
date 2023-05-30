@@ -1485,7 +1485,7 @@ h3 {
   grid-template-columns: repeat(1, 8fr);
   align-items: left;
   height: 45em;
-  width: 27em;
+  width: 28em;
   border-right: 1px solid darkgrey;
 }
 
@@ -1504,6 +1504,17 @@ h3 {
   width: 26em;
   padding-top: 0.5em;
   border-bottom: 1px solid darkgray;
+}
+
+.chat-persons-yusuf {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: left;
+  height: auto;
+  width: 26em;
+  padding-top: 0.5em;
+  border-bottom: 1px solid darkgray;
+  background-color: #f3f3f3;
 }
 
 .chat-h3 {
@@ -1536,14 +1547,16 @@ h3 {
 }
 
 .chat-box {
-  width: 75%;
+  width: 95%;
 }
 
 .chat-top-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: left;
-  width: 32em;
+  width: 100%;
+  border-bottom: 1px solid darkgray;
+  padding-bottom: 1em;
 }
 
 .chat-avatar-chat-box {
@@ -1551,6 +1564,11 @@ h3 {
   height: 6em;
   border-radius: 50%;
   padding: 0.5em;
+}
+
+.chat-title-naam {
+  margin-top: -2.5em;
+  margin-left: 4.5em;
 }
 
 section {
@@ -1566,6 +1584,7 @@ section {
   display: flex;
   justify-items: center;
   flex-direction: column;
+  margin-top: 1em;
 }
 
 .dag-boven-in-chat-p {
@@ -1629,7 +1648,7 @@ section {
   border: 1px solid lightgray;
   padding: 1em;
   height: calc(3rem+ 2px);
-  width: 50em;
+  width: 60em;
   margin-right: 0.5;
 }
 
@@ -1669,7 +1688,7 @@ section {
   align-items: left;
   border-radius: 10px;
   color: #000000;
-  margin-top: 5em;
+  margin-top: 1em;
 }
 
 .chatbericht-1-links {
@@ -1686,6 +1705,8 @@ section {
   border-radius: 10px;
   color: #000000;
   margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 72%;
 }
 
 .chatbericht-1-rechts {

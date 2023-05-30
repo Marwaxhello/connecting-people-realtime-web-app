@@ -2,14 +2,16 @@
 import { log } from "console";
 import express from "express";
 import { ppid } from "process";
-// import { Server } from "socket.io";
+import { Server } from "socket.io";
+import { createServer } from "http";
 
 const url = "https://api.vinimini.fdnd.nl/api/v1/producten"; // URL naar Json data
 const url2 = "https://api.vinimini.fdnd.nl/api/v1";
 
 // Maak een nieuwe express app aan
 const app = express();
-// const ioServer = new Server(http);
+const ioServer = new Server(http);
+const http = createServer(app);
 
 //  Stel in hoe we express gebruiken
 app.set("view engine", "ejs");
@@ -97,30 +99,30 @@ async function fetchJson(url, payload = {}) {
 // ------- IO -------
 
 // Serveer client-side bestanden
-// app.use(express.static(path.resolve("public")));
+app.use(express.static(path.resolve("public")));
 
-// // Start de socket.io server op
-// ioServer.on("connection", (client) => {
-//   // Log de connectie naar console
-//   console.log(`user ${client.id} connected`);
+// Start de socket.io server op
+ioServer.on("connection", (client) => {
+  // Log de connectie naar console
+  console.log(`user ${client.id} connected`);
 
-//   // Luister naar een message van een gebruiker
-//   client.on("message", (message) => {
-//     // Log het ontvangen bericht
-//     console.log(`user ${client.id} sent message: ${message}`);
+  // Luister naar een message van een gebruiker
+  client.on("message", (message) => {
+    // Log het ontvangen bericht
+    console.log(`user ${client.id} sent message: ${message}`);
 
-//     // Verstuur het bericht naar alle clients
-//     ioServer.emit("message", message);
-//   });
+    // Verstuur het bericht naar alle clients
+    ioServer.emit("message", message);
+  });
 
-//   // Luister naar een disconnect van een gebruiker
-//   client.on("disconnect", () => {
-//     // Log de disconnect
-//     console.log(`user ${client.id} disconnected`);
-//   });
-// });
+  // Luister naar een disconnect van een gebruiker
+  client.on("disconnect", () => {
+    // Log de disconnect
+    console.log(`user ${client.id} disconnected`);
+  });
+});
 
-// // Start een http server op het ingestelde poortnummer en log de url
-// http.listen(port, () => {
-//   console.log("listening on http://localhost:" + port);
-// });
+// Start een http server op het ingestelde poortnummer en log de url
+http.listen(port, () => {
+  console.log("listening on http://localhost:" + port);
+});
