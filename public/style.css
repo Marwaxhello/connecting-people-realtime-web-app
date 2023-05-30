@@ -1716,7 +1716,7 @@ section {
   font-size: 1em;
 }
 
-.chat-messages {
+.message {
   margin: 0;
   padding: 1.1em;
   list-style-type: none;
@@ -1725,12 +1725,35 @@ section {
   height: 48vh;
 }
 
+.message-background {
+  padding: 0.5em;
+  color: var(--Darkblue);
+  border-radius: 1em;
+  border: 1px solid var(--Aqua-green);
+  width: max-content;
+  list-style: none;
+}
+
+.message-handle {
+  margin-top: 0.25em;
+  font-size: 0.7em;
+  text-align: left;
+  color: var(--Aqua-green);
+  margin-bottom: 0.6em;
+}
+
+.time {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* --- STATES --- */
 .loading {
   display: none;
 }
 
-.offline {
+.error {
   display: none;
 }
 
