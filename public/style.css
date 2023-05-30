@@ -1716,23 +1716,24 @@ section {
   font-size: 1em;
 }
 
-/* section form {
-  width: 100%;
-  height: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: left;
+.chat-messages {
+  margin: 0;
+  padding: 1.1em;
+  list-style-type: none;
+  flex-grow: 2;
+  overflow-y: scroll;
+  height: 48vh;
 }
 
-section form > button {
-  padding: 0 0.6rem 0 0.4rem;
-  width: 2rem;
-  background: #72a7a5;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  border: 0;
-  opacity: 80%;
-  outline: none;
-  transition: 0.2s;
-  width: 100%;
-} */
+/* --- STATES --- */
+.loading {
+  display: none;
+}
+
+.offline {
+  display: none;
+}
+
+.typing {
+  display: none;
+}
