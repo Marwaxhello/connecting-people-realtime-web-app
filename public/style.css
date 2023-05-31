@@ -1765,16 +1765,40 @@ ul > li {
 }
 
 /* --- STATES --- */
-.loading {
+span.loading {
   display: none;
+  text-align: center;
+  color: var(--Dark-grey);
 }
 
 .error {
   display: none;
+  text-align: center;
 }
 
-.typing {
+.error-btn {
+  border: 1.5px solid var(--Aqua-green);
+  color: var(--Aqua-green);
+  border-radius: 30px;
+  background-color: white;
+  padding: 1em 1.5em 1em 1.5em;
+  margin-top: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+#typing {
   display: none;
+  font-size: 2em;
+  width: fit-content;
+  height: min-content;
+  padding: 0.4em;
+  color: #152a42;
+  background-color: #73aea6;
+  border-radius: 0.5em 0.5em 0.5em 0em;
+  margin-top: 12em;
+  margin-bottom: 0.5em;
 }
 
 /* --------PROFIEL STYLING----------- */
@@ -1856,9 +1880,9 @@ ul > li {
   margin-bottom: 1em;
 }
 
-.connecties{
- color: var(--Dark-grey);
- font-size: 10px;
+.connecties {
+  color: var(--Dark-grey);
+  font-size: 10px;
 }
 
 .wishlist{
@@ -1873,4 +1897,3 @@ ul > li {
     align-items: center;
   }
 } */
-
