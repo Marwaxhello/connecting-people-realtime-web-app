@@ -1861,6 +1861,11 @@ ul > li {
  font-size: 10px;
 }
 
+.wishlist{
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: -0.4em;
+}
 /* @media (min-width: 1024px) {
   .parting {
     display: grid;
