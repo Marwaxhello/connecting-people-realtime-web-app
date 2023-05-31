@@ -78,29 +78,8 @@ main > div {
   margin-left: 25%;
 }
 
-/* -----MENU/NAV----- */
-
-nav {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
-}
-
-ul {
-  list-style-type: none;
-  display: none;
-  color: var(--Aqua-green);
-}
-
-li:active {
-  color: var(--Aqua-green);
-}
-
 a {
-  list-style-type: none;
+  text-decoration: none;
   color: var(--Black);
 }
 
@@ -115,6 +94,27 @@ button > a {
 
 button > a:hover {
   color: white;
+}
+
+/* -----MENU/NAV----- */
+
+nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+}
+
+nav ul {
+  list-style-type: none;
+  display: none;
+  color: var(--Aqua-green);
+}
+
+nav li:active {
+  color: var(--Aqua-green);
 }
 
 /* -----NAV MOBILE DROPDOWN----- */
@@ -301,7 +301,7 @@ p {
     text-align: right;
     padding-right: 5rem;
   }
-  ul {
+  nav ul {
     list-style-type: none;
     display: flex;
     gap: 4em;
@@ -1581,11 +1581,12 @@ section {
   width: 10em;
   align-items: center;
   border-radius: 10px;
-  margin-left: 0em;
   display: flex;
   justify-items: center;
   flex-direction: column;
   margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dag-boven-in-chat-p {
@@ -1724,6 +1725,16 @@ section {
   flex-grow: 2;
   overflow-y: scroll;
   height: 48vh;
+  text-align: right;
+}
+
+.message li {
+  border: 1px solid var(--Aqua-green);
+  width: auto;
+}
+
+ul > li {
+  list-style-type: none;
 }
 
 .message-background {
@@ -1800,7 +1811,6 @@ section {
   display: flex;
   justify-content: center;
 }
-
 
 .profiel {
   display: flex;
