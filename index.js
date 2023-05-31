@@ -78,6 +78,10 @@ app.get("/kalender", (request, response) => {
   response.render("kalender");
 });
 
+app.get("/profiel", (request, response) => {
+  response.render("profiel");
+});
+
 app.get("/speciaalvoormini", (request, response) => {
   response.render("speciaalvoormini");
 });

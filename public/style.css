@@ -13,6 +13,7 @@
   --Aqua-green: #73aea6;
   --Black: #000000;
   --Grey: #fafafa;
+  --Dark-grey: #bcb7b7;
   --Lightblue: #daeeee;
   --Darkblue: #152a42;
   --LightGreen: #d5edee;
@@ -1760,3 +1761,58 @@ section {
 .typing {
   display: none;
 }
+
+/* --------PROFIEL STYLING----------- */
+
+.userinfo {
+  color: var(--Dark-grey);
+  margin-left: 6em;
+}
+
+.username {
+  font-size: 2em;
+  margin-top: -0.1em;
+  text-align: center;
+}
+
+.profiel-img {
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.profiel-pagina {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: auto;
+  width: 28em;
+  align-items: center;
+  padding-top: 0.5em;
+  border-bottom: 1px solid darkgray;
+}
+
+.profiel-pagina-img {
+  width: 25rem;
+  height: auto;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+
+.profiel {
+  display: flex;
+  justify-content: center;
+}
+
+/* @media (min-width: 1024px) {
+  .parting {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+} */
+
+/* 1780 */
