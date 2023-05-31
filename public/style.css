@@ -1815,7 +1815,7 @@ span.loading {
 }
 
 .profiel-img {
-  width: 15em;
+  /* width: 15em; */
   height: 15em;
   border-radius: 50%;
   margin-top: 2em;
@@ -1895,7 +1895,6 @@ span.loading {
   color: var(--Dark-grey);
   font-size: 12px;
   font-weight: 600;
-  /* text-transform: uppercase; */
   text-align: center;
 }
 
