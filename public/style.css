@@ -1853,12 +1853,13 @@ span.loading {
   border-radius: 30px;
   background-color: white;
   padding: 1em 1em 1em 1em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+  width: 112px;
+  height: 49px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.05em;
-  /* margin-top: 1em;
-  margin-left: 0.5em; */
+  margin-left: 0.5em;
 }
 
 .producten-btn {
@@ -1874,7 +1875,7 @@ span.loading {
 }
 
 .homepage-btn-profiel {
-  padding-bottom: 1em;
+  /* padding-bottom: 1em; */
   text-align: center;
   padding-top: 1em;
   margin-bottom: 1em;
@@ -1882,14 +1883,22 @@ span.loading {
 
 .connecties {
   color: var(--Dark-grey);
-  font-size: 10px;
+  font-size: 8px;
 }
 
-.wishlist{
-  width: 1.5em;
-  height: 1.5em;
-  margin-top: -0.4em;
+.wishlist {
+  width: 1em;
+  height: 1em;
 }
+
+.bio{
+  color: var(--Dark-grey);
+  font-size: 12px;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  text-align: center;
+}
+
 /* @media (min-width: 1024px) {
   .parting {
     display: grid;
