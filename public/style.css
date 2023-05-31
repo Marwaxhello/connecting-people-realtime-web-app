@@ -1724,13 +1724,17 @@ section {
   list-style-type: none;
   flex-grow: 2;
   overflow-y: scroll;
-  height: 48vh;
+  height: 29em;
   text-align: right;
 }
 
 .message li {
   border: 1px solid var(--Aqua-green);
-  width: auto;
+  width: fit-content;
+  padding: 0.3em 0.6em;
+  border-radius: 0.5em 0.5em 0em 0.5em;
+  margin-bottom: 0.3em;
+  margin-top: 0.2em;
 }
 
 ul > li {
