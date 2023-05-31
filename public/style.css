@@ -1821,6 +1821,46 @@ ul > li {
   justify-content: center;
 }
 
+/* --------PROFIEL BUTTONS----------- */
+
+.test-btn-profiel {
+  border: 1.5px solid var(--Aqua-green);
+  color: var(--Aqua-green);
+  border-radius: 30px;
+  background-color: white;
+  padding: 1em 1.5em 1em 1.5em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  /* margin-top: 1em;
+  margin-left: 0.5em; */
+}
+
+.producten-btn {
+  border: 1.5px solid var(--Aqua-green);
+  color: var(--Aqua-green);
+  border-radius: 30px;
+  background-color: white;
+  padding: 1em 1.5em 1em 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-left: 0.8em;
+}
+
+.homepage-btn-profiel {
+  padding-bottom: 1em;
+  text-align: center;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+
+.connecties{
+ color: var(--Dark-grey);
+ font-size: 10px;
+}
+
 /* @media (min-width: 1024px) {
   .parting {
     display: grid;
@@ -1829,4 +1869,3 @@ ul > li {
   }
 } */
 
-/* 1780 */
