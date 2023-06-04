@@ -1891,7 +1891,7 @@ span.loading {
   height: 1em;
 }
 
-.bio{
+.bio {
   color: var(--Dark-grey);
   font-size: 12px;
   font-weight: 600;
@@ -1899,9 +1899,12 @@ span.loading {
 }
 
 /* @media (min-width: 1024px) {
-  .parting {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+  .profiel-img {
+    width: 20em;
+    margin-left: -30em;
+  }
+
+  .homepage-btn-profiel {
+    margin-bottom: 3em;
   }
 } */
